@@ -1,0 +1,114 @@
+/* Umumiy sahifa */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.header{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    gap: 30px;
+}
+#search {
+  display: block;
+  margin: 30px auto;
+  
+  padding: 12px 18px;
+  width: 300px;
+  max-width: 400px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  outline: none;
+  transition: 0.3s;
+}
+
+#search:focus {
+  border-color: #ffb347;
+  box-shadow: 0 0 5px rgba(255,179,71,0.5);
+}
+
+
+/* Wrapper */
+.card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Har bir mahsulot kartasi */
+.product {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: center;
+  transition: 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.product:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+/* Rasm */
+.product img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  margin-bottom: 15px;
+  transition: 0.3s ease;
+}
+
+.product:hover img {
+  transform: scale(1.05);
+}
+
+/* Nomi */
+.title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Kategoriya */
+.category {
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+/* Narx va reyting */
+.product p {
+  font-size: 14px;
+  color: #444;
+  margin: 5px 0;
+}
+
+/* Tugma (Add to cart) */
+.btn {
+  background: linear-gradient(135deg, #ffb347, #ffcc33);
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #ffaa00, #ffd966);
+  transform: scale(1.05);
+}
+
+
